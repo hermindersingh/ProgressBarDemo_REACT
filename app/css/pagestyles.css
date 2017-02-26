@@ -1,0 +1,247 @@
+/* For lanscape orientation */
+@media (orientation:landscape) {
+	.basediv{
+		min-width:470px;
+		min-height:340px;
+		max-width:470px;
+		max-height:340px;
+		text-align:center;		
+		background-color:#ffffff;
+	}
+	.container{
+		width:80%;
+		height:100%;
+		margin: 5% 5%;
+		border:0px solid gray;
+		overflow: auto;		
+		position:fixed;
+		float: left;
+	}
+	.buttonHolder{
+		position:relative;
+		width:38%;
+		height: 260px;
+		max-height: 260px;
+		margin: 0px 10px 0px 0px;
+		overflow: auto;
+		float: right;
+	}
+	.barHolder{
+		position:relative; 
+		padding-right:3%;
+		padding-left:5%;
+		margin: 0px 2px 0px 4px;
+		width:50%;
+		height: 260px;
+		max-height: 260px;
+		overflow: auto;
+		border:1px solid #dddddd;
+		float: left;
+	}
+	.insText {
+		position:relative;
+		width:50%;
+		font-family:"Arial";
+		font-size:11pt;
+		margin-top:10px;
+		margin-bottom:10px;		
+	}
+}
+  
+ /* For portrait orientation */ 
+ @media (orientation:portrait) {
+	.basediv{
+		min-width:360px;
+		min-height:480px;
+		max-width:360px;
+		max-height:480px;
+		vertical-align: middle;
+		text-align:center;
+		background-color:#ffffff;
+	}	
+	.container{
+		width:80%;
+		height:100%;
+		margin: 10% 10%;
+		border:0px solid gray;	
+	}
+	
+	.buttonHolder{
+		position:relative;
+		width:100%;
+		height: 130px;
+		margin-right:10px;
+		max-height: 130px;
+		overflow: auto;
+	}
+	.barHolder{
+		position:relative; 
+		padding-right:2%;
+		padding-left:5%;
+		margin: 0px 2px 0px 4px;
+		width:90%;
+		height: 300px;
+		max-height: 300px;
+		overflow: auto;
+		border:1px solid #dddddd;
+	}
+	.insText {
+		position:relative;
+		width:100%;
+		font-family:"Arial";
+		font-size:11pt;
+		margin-top:10px;
+		margin-bottom:10px;		
+	}
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  .basediv{
+		min-width:360px;
+		min-height:480px;
+		max-width:360px;
+		max-height:480px;
+		vertical-align: middle;
+		text-align:center;
+		background-color:#ffffff;
+	}	
+	.container{
+		width:80%;
+		height:100%;
+		margin: 10% 10%;
+		border:0px solid gray;	
+	}
+	
+	.buttonHolder{
+		position:relative;
+		width:100%;
+		height: 130px;
+		margin-right:10px;
+		max-height: 130px;
+		overflow: auto;
+	}
+	.barHolder{
+		position:relative; 
+		padding-right:2%;
+		padding-left:5%;
+		margin: 0px 2px 0px 4px;
+		width:90%;
+		height: 300px;
+		max-height: 300px;
+		overflow: auto;
+		border:1px solid #dddddd;
+	}
+	.insText {
+		position:relative;
+		width:100%;
+		font-family:"Arial";
+		font-size:11pt;
+		margin-top:10px;
+		margin-bottom:10px;		
+	}
+}
+ 
+ .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body{
+	background-color:#cccccc;
+}
+  
+.title {
+    position:relative;
+	width:100%;
+	font-family:"Arial";
+	font-size:22pt;
+	
+}
+.title span {
+    vertical-align: middle;
+	padding-top:10px;
+    text-align:center;
+    display: table;
+	width:100%;
+}
+  
+ 
+.insText span {
+    vertical-align: middle;
+    text-align:center;
+    display: table;
+}
+
+
+/* buttons */
+.button{	
+	margin: 5px 10px 5px 10px;
+	width:50px;
+	display: inline-table;
+	height:52px;
+	vertical-align: middle;
+	font-family:"Arial";
+	background-color:#cccccc;
+	border:1px solid gray;
+}
+
+.button:hover {cursor: hand; cursor: pointer;background-color:#bbbbbb;  }
+
+/* bars */
+.progressBar{
+	position:relative; 
+	margin: 10px 0px 10px 0px;
+	height:25px;
+	background-color:white;
+	cursor:pointer;
+	border:1px solid #dddddd;	
+}
+
+.progressBarSel{
+	position:relative; 
+	margin: 10px 0px 10px 0px;
+	height:25px;
+	background-color:white;
+	cursor:default;
+	border:1px solid black;
+}
+
+.barBG{
+	background-color:#9cd9ea;
+	height:100%;
+}
+
+.barBG span {
+    display: table;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.barBGOverFlow{
+	background-color:darkorange;
+	height:100%;
+}
+
+.barBGOverFlow span {
+    display: table;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.barLabel{
+	font-family:"Arial";
+	font-size:"5px";
+	margin-top:-20px;
+	z-index:-1;
+}
+ 
